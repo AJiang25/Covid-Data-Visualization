@@ -1,0 +1,22 @@
+---
+title: "Data Visualization Project"
+author: "Arnold Jiang, Marina Peng"
+format: pdf
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Overview
+
+Data Visualization of Covid-19 Pandemic
+
+## Setup
+```{r}
+library(tidyverse)
+library(readr)
+library(janitor)
+```{r}
+
+```
