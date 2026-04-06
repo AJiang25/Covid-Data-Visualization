@@ -1,0 +1,283 @@
+{
+  "files": [
+    {
+      "file": "allergies.csv",
+      "rows": 5417,
+      "columns": 6,
+      "missingPct": 16.49,
+      "uniqueKeys": {
+        "PATIENT": 1528,
+        "ENCOUNTER": 1528
+      },
+      "dateRanges": {
+        "START": [
+          "1910-09-09",
+          "2020-05-16"
+        ],
+        "STOP": [
+          "2019-06-16",
+          "2020-05-19"
+        ]
+      }
+    },
+    {
+      "file": "careplans.csv",
+      "rows": 37715,
+      "columns": 9,
+      "missingPct": 7.08,
+      "uniqueKeys": {
+        "Id": 37715,
+        "PATIENT": 11771,
+        "ENCOUNTER": 30583
+      },
+      "dateRanges": {
+        "START": [
+          "1910-08-30",
+          "2020-05-26"
+        ],
+        "STOP": [
+          "1912-11-16",
+          "2020-05-25"
+        ]
+      }
+    },
+    {
+      "file": "conditions.csv",
+      "rows": 114544,
+      "columns": 6,
+      "missingPct": 7.49,
+      "uniqueKeys": {
+        "PATIENT": 12165,
+        "ENCOUNTER": 54731
+      },
+      "dateRanges": {
+        "START": [
+          "1910-06-26",
+          "2020-05-26"
+        ],
+        "STOP": [
+          "1915-12-30",
+          "2020-05-25"
+        ]
+      }
+    },
+    {
+      "file": "devices.csv",
+      "rows": 2360,
+      "columns": 7,
+      "missingPct": 5.36,
+      "uniqueKeys": {
+        "PATIENT": 1123,
+        "ENCOUNTER": 1179
+      },
+      "dateRanges": {
+        "START": [
+          "1912-05-15",
+          "2020-05-21"
+        ],
+        "STOP": [
+          "2020-02-13",
+          "2020-04-08"
+        ]
+      }
+    },
+    {
+      "file": "encounters.csv",
+      "rows": 321528,
+      "columns": 15,
+      "missingPct": 10.38,
+      "uniqueKeys": {
+        "Id": 321528,
+        "PATIENT": 12330,
+        "ORGANIZATION": 5209,
+        "PROVIDER": 5214,
+        "PAYER": 10
+      },
+      "dateRanges": {
+        "START": [
+          "1910-06-26",
+          "2020-05-27"
+        ],
+        "STOP": [
+          "1910-06-26",
+          "2020-05-27"
+        ]
+      }
+    },
+    {
+      "file": "imaging_studies.csv",
+      "rows": 4504,
+      "columns": 10,
+      "missingPct": 0.0,
+      "uniqueKeys": {
+        "Id": 4504,
+        "PATIENT": 1157,
+        "ENCOUNTER": 3771
+      },
+      "dateRanges": {
+        "DATE": [
+          "1919-06-24",
+          "2020-05-23"
+        ]
+      }
+    },
+    {
+      "file": "immunizations.csv",
+      "rows": 16481,
+      "columns": 6,
+      "missingPct": 0.0,
+      "uniqueKeys": {
+        "PATIENT": 10376,
+        "ENCOUNTER": 11559
+      },
+      "dateRanges": {
+        "DATE": [
+          "1945-03-07",
+          "2020-05-26"
+        ]
+      }
+    },
+    {
+      "file": "medications.csv",
+      "rows": 431262,
+      "columns": 13,
+      "missingPct": 4.08,
+      "uniqueKeys": {
+        "PATIENT": 9566,
+        "PAYER": 10,
+        "ENCOUNTER": 250517
+      },
+      "dateRanges": {
+        "START": [
+          "1910-06-26",
+          "2020-05-26"
+        ],
+        "STOP": [
+          "1910-12-18",
+          "2020-05-26"
+        ]
+      }
+    },
+    {
+      "file": "observations.csv",
+      "rows": 1659750,
+      "columns": 8,
+      "missingPct": 0.94,
+      "uniqueKeys": {
+        "PATIENT": 12352,
+        "ENCOUNTER": 40761
+      },
+      "dateRanges": {
+        "DATE": [
+          "1913-06-01",
+          "2020-05-27"
+        ]
+      }
+    },
+    {
+      "file": "organizations.csv",
+      "rows": 5499,
+      "columns": 11,
+      "missingPct": 1.56,
+      "uniqueKeys": {
+        "Id": 5499
+      },
+      "dateRanges": {}
+    },
+    {
+      "file": "patients.csv",
+      "rows": 12352,
+      "columns": 25,
+      "missingPct": 15.19,
+      "uniqueKeys": {
+        "Id": 12352
+      },
+      "dateRanges": {
+        "BIRTHDATE": [
+          "1909-11-19",
+          "2020-05-25"
+        ],
+        "DEATHDATE": [
+          "1914-02-15",
+          "2020-05-22"
+        ]
+      }
+    },
+    {
+      "file": "payer_transitions.csv",
+      "rows": 41392,
+      "columns": 5,
+      "missingPct": 1.49,
+      "uniqueKeys": {
+        "PATIENT": 10611,
+        "PAYER": 10
+      },
+      "dateRanges": {}
+    },
+    {
+      "file": "payers.csv",
+      "rows": 10,
+      "columns": 21,
+      "missingPct": 2.38,
+      "uniqueKeys": {
+        "Id": 10
+      },
+      "dateRanges": {}
+    },
+    {
+      "file": "procedures.csv",
+      "rows": 100427,
+      "columns": 8,
+      "missingPct": 6.21,
+      "uniqueKeys": {
+        "PATIENT": 11664,
+        "ENCOUNTER": 39208
+      },
+      "dateRanges": {
+        "DATE": [
+          "1915-04-16",
+          "2020-05-26"
+        ]
+      }
+    },
+    {
+      "file": "providers.csv",
+      "rows": 31764,
+      "columns": 12,
+      "missingPct": 0.0,
+      "uniqueKeys": {
+        "Id": 31764,
+        "ORGANIZATION": 5499
+      },
+      "dateRanges": {}
+    },
+    {
+      "file": "supplies.csv",
+      "rows": 143110,
+      "columns": 6,
+      "missingPct": 0.0,
+      "uniqueKeys": {
+        "PATIENT": 1867,
+        "ENCOUNTER": 2398
+      },
+      "dateRanges": {
+        "DATE": [
+          "2020-01-26",
+          "2020-04-09"
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "fileCount": 16,
+    "totalRows": 2928115
+  },
+  "linkColumnFrequency": {
+    "ENCOUNTER": 10,
+    "ID": 7,
+    "ORGANIZATION": 2,
+    "PATIENT": 12,
+    "PAYER": 3,
+    "PROVIDER": 1
+  }
+}
