@@ -78,32 +78,32 @@ export function renderVitals() {
       el: "v-temp",
       unit: "°C",
       yr: [36, 42],
-      cs: "#26c0d3",
-      cd: "#e0694a"
+      cs: "#56b4e9",
+      cd: "#d55e00"
     },
     {
       key: "heart_rate",
       el: "v-hr",
       unit: "bpm",
       yr: [55, 165],
-      cs: "#26c0d3",
-      cd: "#e0694a"
+      cs: "#56b4e9",
+      cd: "#d55e00"
     },
     {
       key: "resp_rate",
       el: "v-rr",
       unit: "br/min",
       yr: [12, 36],
-      cs: "#26c0d3",
-      cd: "#e0694a"
+      cs: "#56b4e9",
+      cd: "#d55e00"
     },
     {
       key: "lymphocytes",
       el: "v-lymph",
       unit: "x10³/µL",
       yr: [0, 1.6],
-      cs: "#26c0d3",
-      cd: "#e0694a"
+      cs: "#56b4e9",
+      cd: "#d55e00"
     }
   ];
 
@@ -152,8 +152,8 @@ export function renderVitals() {
       ],
       buildLayout({
         yaxis: {
-          gridcolor: "#252a38",
-          zerolinecolor: "#252a38",
+          gridcolor: "#34435d",
+          zerolinecolor: "#34435d",
           tickfont: { size: 11 },
           range: config.yr,
           title: {
@@ -162,8 +162,8 @@ export function renderVitals() {
           }
         },
         xaxis: {
-          gridcolor: "#252a38",
-          zerolinecolor: "#252a38",
+          gridcolor: "#34435d",
+          zerolinecolor: "#34435d",
           tickfont: { size: 11 },
           title: {
             text: "Days since diagnosis",
@@ -186,7 +186,7 @@ export function renderVitals() {
             y1: 1,
             yref: "paper",
             line: {
-              color: "rgba(242,185,49,0.3)",
+              color: "rgba(240,228,66,0.45)",
               width: 1.5,
               dash: "dash"
             }
@@ -200,7 +200,7 @@ export function renderVitals() {
             text: "Median<br>death day",
             font: {
               size: 10,
-              color: "#f2b931"
+              color: "#f0e442"
             },
             showarrow: false,
             align: "left"
@@ -228,10 +228,10 @@ export function renderCascade() {
         orientation: "h",
         x: rows.map((item) => item.pct_of_died),
         y: rows.map((item) => item.label),
-        marker: { color: "#e0694a" },
+        marker: { color: "#d55e00" },
         text: rows.map((item) => `${item.pct_of_died.toFixed(0)}%`),
         textposition: "outside",
-        textfont: { size: 11, color: "#eaebef" },
+        textfont: { size: 11, color: "#f5f7fb" },
         hovertemplate: `<b>%{y}</b><br>%{x:.1f}% of fatal cases (n=%{customdata} of ${totalDied})<extra></extra>`,
         customdata: rows.map((item) => item.n_died)
       }
@@ -264,10 +264,10 @@ export function renderCascade() {
         orientation: "h",
         x: rows.map((item) => item.pct_of_survived),
         y: rows.map((item) => item.label),
-        marker: { color: "#26c0d3" },
+        marker: { color: "#56b4e9" },
         text: rows.map((item) => `${item.pct_of_survived.toFixed(0)}%`),
         textposition: "outside",
-        textfont: { size: 11, color: "#eaebef" },
+        textfont: { size: 11, color: "#f5f7fb" },
         hovertemplate: `<b>%{y}</b><br>%{x:.1f}% of survivors (n=%{customdata} of ${totalSurvived})<extra></extra>`,
         customdata: rows.map((item) => item.n_survived)
       }
@@ -302,7 +302,7 @@ export function renderCascade() {
         name: "New Cases",
         x: weekly.map((item) => item.week),
         y: weekly.map((item) => item.cases),
-        marker: { color: "rgba(38,192,211,0.50)" },
+        marker: { color: "rgba(86,180,233,0.45)" },
         hovertemplate: "Week %{x}<br>Cases: %{y:,}<extra></extra>",
         yaxis: "y"
       },
@@ -313,13 +313,13 @@ export function renderCascade() {
         x: weekly.map((item) => item.week),
         y: weekly.map((item) => item.deaths),
         line: {
-          color: "#e0694a",
+          color: "#d55e00",
           width: 2.5,
           shape: "spline"
         },
         marker: {
           size: 5,
-          color: "#e0694a"
+          color: "#d55e00"
         },
         hovertemplate: "Week %{x}<br>Deaths: %{y}<extra></extra>",
         yaxis: "y2"
@@ -332,19 +332,19 @@ export function renderCascade() {
         x: 0.5,
         xanchor: "center",
         y: -0.22,
-        font: { size: 11, color: "#7a8196" },
+        font: { size: 11, color: "#c4cee0" },
         bgcolor: "transparent"
       },
       yaxis: {
         title: { text: "Weekly new cases", font: { size: 11 } },
-        gridcolor: "#252a38"
+        gridcolor: "#34435d"
       },
       yaxis2: {
-        title: { text: "Weekly deaths", font: { size: 11, color: "#e0694a" } },
+        title: { text: "Weekly deaths", font: { size: 11, color: "#d55e00" } },
         overlaying: "y",
         side: "right",
         gridcolor: "transparent",
-        tickfont: { color: "#e0694a", size: 11 }
+        tickfont: { color: "#d55e00", size: 11 }
       },
       xaxis: {
         tickangle: -30,
@@ -367,10 +367,10 @@ export function renderCascade() {
         type: "bar",
         x: D.days_to_death.map((item) => item.bin),
         y: D.days_to_death.map((item) => item.count),
-        marker: { color: "#e0694a", opacity: 0.85 },
+        marker: { color: "#d55e00", opacity: 0.85 },
         text: D.days_to_death.map((item) => item.count),
         textposition: "outside",
-        textfont: { size: 11, color: "#eaebef" },
+        textfont: { size: 11, color: "#f5f7fb" },
         hovertemplate: "<b>%{x}</b><br>Deaths: %{y}<extra></extra>"
       }
     ],
@@ -404,10 +404,10 @@ export function renderSeverity() {
         type: "bar",
         x: severityGroups.map((item) => item.SEVERITY),
         y: severityGroups.map((item) => item.total),
-        marker: { color: "#26c0d3" },
+        marker: { color: "#56b4e9" },
         text: severityGroups.map((item) => item.total.toLocaleString()),
         textposition: "outside",
-        textfont: { size: 12, color: "#eaebef" },
+        textfont: { size: 12, color: "#f5f7fb" },
         hovertemplate: "<b>%{x}</b><br>%{y:,} patients<extra></extra>"
       }
     ],
@@ -437,10 +437,10 @@ export function renderSeverity() {
         type: "bar",
         x: severityGroups.map((item) => item.SEVERITY),
         y: severityGroups.map((item) => item.mortality_rate),
-        marker: { color: "#e0694a" },
+        marker: { color: "#d55e00" },
         text: severityGroups.map((item) => `${item.mortality_rate}%`),
         textposition: "outside",
-        textfont: { size: 12, color: "#eaebef" },
+        textfont: { size: 12, color: "#f5f7fb" },
         hovertemplate: "<b>%{x}</b><br>Mortality: %{y}%<br>n=%{customdata:,}<extra></extra>",
         customdata: severityGroups.map((item) => item.total)
       }

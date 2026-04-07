@@ -7,20 +7,20 @@
 }
 
 :root {
-  --bg: #0d0f14;
-  --surface: #13161e;
-  --surface2: #191d28;
-  --surface3: #1e2230;
-  --border: #252a38;
-  --border2: #2e3448;
-  --text: #eaebef;
-  --muted: #7a8196;
-  --faint: #424759;
-  --accent: #9ca3af;
-  --accent-dim: rgba(156, 163, 175, 0.10);
-  --accent-border: rgba(156, 163, 175, 0.25);
-  --teal: #26c0d3;
-  --rust: #e0694a;
+  --bg: #0b1020;
+  --surface: #121a2a;
+  --surface2: #172238;
+  --surface3: #1f2c46;
+  --border: #34435d;
+  --border2: #445675;
+  --text: #f5f7fb;
+  --muted: #c4cee0;
+  --faint: #7e8aa3;
+  --accent: #a7b4cb;
+  --accent-dim: rgba(167, 180, 203, 0.16);
+  --accent-border: rgba(167, 180, 203, 0.45);
+  --teal: #56b4e9;
+  --rust: #d55e00;
   --font: 'DM Sans', system-ui, sans-serif;
   --mono: 'DM Mono', monospace;
 }

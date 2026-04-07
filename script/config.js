@@ -7,10 +7,10 @@ export function buildLayout(overrides = {}) {
   return Object.assign(
     {
       paper_bgcolor: "transparent",
-      plot_bgcolor: "#191d28",
+      plot_bgcolor: "#172238",
       font: {
         family: "DM Sans",
-        color: "#7a8196",
+        color: "#c4cee0",
         size: 12
       },
       margin: {
@@ -20,21 +20,21 @@ export function buildLayout(overrides = {}) {
         r: 18
       },
       xaxis: {
-        gridcolor: "#252a38",
-        zerolinecolor: "#252a38",
+        gridcolor: "#34435d",
+        zerolinecolor: "#34435d",
         tickfont: { size: 11 }
       },
       yaxis: {
-        gridcolor: "#252a38",
-        zerolinecolor: "#252a38",
+        gridcolor: "#34435d",
+        zerolinecolor: "#34435d",
         tickfont: { size: 11 }
       },
       hoverlabel: {
-        bgcolor: "#191d28",
-        bordercolor: "#252a38",
+        bgcolor: "#172238",
+        bordercolor: "#34435d",
         font: {
           family: "DM Sans",
-          color: "#eaebef",
+          color: "#f5f7fb",
           size: 12
         }
       },
