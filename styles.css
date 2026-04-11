@@ -7,7 +7,7 @@
 }
 
 :root {
-  --bg: #0b1020;
+  --bg: #000000;
   --surface: #121a2a;
   --surface2: #172238;
   --surface3: #1f2c46;
@@ -21,6 +21,7 @@
   --accent-border: rgba(167, 180, 203, 0.45);
   --teal: #56b4e9;
   --rust: #d55e00;
+  --gold: #F4C542;
   --font: 'DM Sans', system-ui, sans-serif;
   --mono: 'DM Mono', monospace;
 }
@@ -298,6 +299,10 @@ h1 em {
   border-radius: 50%;
   background: var(--accent);
   flex-shrink: 0;
+}
+
+.cdot-gold {
+  background: var(--gold);
 }
 
 .cdot-teal {
